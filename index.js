@@ -47,7 +47,7 @@ app.get("/:cpf", async (req, res) =>
       email,
       cpf: userData.Username
     }
-    return cliente;
+    return res.status(200).json(cliente);
   } catch (err)
   {
     console.error(err);
