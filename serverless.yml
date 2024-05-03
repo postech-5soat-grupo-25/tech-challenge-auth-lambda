@@ -9,7 +9,7 @@ provider:
     - Effect: Allow
       Action:
         - cognito-idp:AdminGetUser
-      Resource: "arn:aws:cognito-idp:us-east-1:411879454356:userpool/us-east-1_hd78hK5KF"
+      Resource: "arn:aws:cognito-idp:us-east-1:891376965147:userpool/us-east-1_9KnwgXBoZ"
 
 functions:
   api:
