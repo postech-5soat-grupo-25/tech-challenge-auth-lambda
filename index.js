@@ -4,7 +4,7 @@ const AWS = require('aws-sdk');
 
 const app = express();
 
-const USER_POOL_ID = 'us-east-1_9KnwgXBoZ';
+const USER_POOL_ID = 'us-east-1_cHfnf8rNY';
 
 const isCpfValid = (cpf) =>
 {
