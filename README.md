@@ -25,4 +25,4 @@ https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/:cpf
 
 ```
 
-Passsando o numero de CPF no lugar de `:cpf` você terá acesso a informações sobre o cpf informado, caso o CPF já tenha sido cadastrado no sistema.
+Passsando o numero de CPF no lugar de `:cpf` você terá acesso a informações sobre o cpf informado, caso o CPF já tenha sido cadastrado no sistema
