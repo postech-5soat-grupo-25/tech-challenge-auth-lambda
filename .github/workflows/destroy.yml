@@ -1,0 +1,23 @@
+name: Destroy Serverless Function
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install Serverless Framework
+      run: npm install -g serverless
+
+    - name: Install Project Dependencies
+      run: npm install
+
+    - name: Deploy
+      run: serverless remove
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
